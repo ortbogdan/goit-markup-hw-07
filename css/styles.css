@@ -5,7 +5,7 @@
   --page-color-first: rgb(255, 255, 255);
   --page-color-second: rgb(33, 150, 243);
 }
-body {
+.page {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.71;
@@ -20,7 +20,6 @@ h3,
 h4,
 h5,
 h6,
-ul,
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -95,13 +94,13 @@ img {
 /* ===== END General Classes ===== */
 
 /*======= Header =======*/
-.section.top {
+.section--in-top {
   padding-top: 0;
   padding-bottom: 0;
 
   border-bottom: 1px solid rgb(236, 236, 236);
 }
-.top .container {
+.page-header {
   display: flex;
   align-items: center;
 }
@@ -117,28 +116,29 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  color: rgb(0, 0, 0);
-}
-.logo-web {
   color: var(--page-color-second);
 }
+.logo__text {
+  color: rgb(0, 0, 0);
+}
 /*== Navigation ==*/
-.menu {
-  margin-left: 93px;
-
+.nav {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.menu-list {
+.nav--in-left {
+  margin-left: 93px;
+}
+.nav__list {
   display: flex;
 
   list-style: none;
 }
-.menu-list .item:not(:first-child) {
+.nav__item:not(:first-child) {
   margin-left: 50px;
 }
-.menu-link {
+.nav__link {
   position: relative;
 
   display: block;
@@ -151,14 +151,14 @@ img {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-link:hover,
-.menu-link:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: var(--page-color-second);
 }
-.is-active {
+.nav__link--active {
   color: var(--page-color-second);
 }
-.menu-link.is-active::after {
+.nav__link--active::after {
   content: '';
   display: inline-block;
   position: absolute;
@@ -171,16 +171,18 @@ img {
 }
 /* ===== END Navigation ===== */
 /*== Contacts ==*/
-.contacts-list {
+.contacts {
   display: flex;
-  margin-left: auto;
 
   list-style: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contacts-link {
+.contacts--in-left {
+  margin-left: auto;
+}
+.contacts__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -193,41 +195,46 @@ img {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-list .item {
+.contacts__item {
   display: flex;
   align-items: center;
 }
 
-.contacts-list .contacts-link:hover,
-.contacts-list .contacts-link:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   color: var(--page-color-second);
   cursor: pointer;
   fill: var(--page-color-second);
 }
-.contacts-list .item + .item {
+.contacts__item:nth-child(2) {
   margin-left: 30px;
 }
-.contacts-link .contacts-icon {
+.contacts__icon {
   margin-right: 10px;
 }
 /* ===== END Contacts ===== */
 /* ======= END Header ======= */
 
 /*======== Footer =========*/
-.bottom {
+.section--in-bottom {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--page-bgcolor);
 }
-.bottom .logo {
-  display: inline-block;
+.logo--in-bottom {
   margin-bottom: 20px;
   padding: 0 0;
+}
+.logo__text--white {
   color: var(--page-color-first);
 }
-.bottom > .container {
+.page-footer {
   display: flex;
   align-items: baseline;
+}
+.page-footer__content {
+  display: flex;
+  flex-direction: column;
 }
 .bottom-box .social-link {
   border-radius: 50% 50%;
@@ -238,27 +245,27 @@ img {
 
   font-style: normal;
 }
-.post-item:not(:last-child) {
+.post__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.post-office {
+.post__office {
   text-decoration: none;
 
   color: var(--page-color-first);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.post-link {
+.post__link {
   text-decoration: none;
 
   color: rgba(255, 255, 255, 0.6);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.post-link:hover,
-.post-link:focus,
-.post-office:hover,
-.post-office:focus {
+.post__link:hover,
+.post__link:focus,
+.post__office:hover,
+.post__office:focus {
   color: var(--page-color-second);
 }
 .bottom-box {
