@@ -14,23 +14,18 @@
 
   color: var(--page-text-color);
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+.text-style {
   margin-top: 0;
   margin-bottom: 0;
 }
-ul,
-ol {
+.lists-style {
+  list-style: none;
+
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
-img {
+.pics-style {
   display: block;
   width: 100%;
   height: auto;
@@ -52,7 +47,6 @@ img {
   border-radius: 4px;
   padding: 10px 0 10px 0;
   width: 200px;
-  margin: 0 auto;
 
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -132,8 +126,6 @@ img {
 }
 .nav__list {
   display: flex;
-
-  list-style: none;
 }
 .nav__item:not(:first-child) {
   margin-left: 50px;
@@ -174,7 +166,6 @@ img {
 .contacts {
   display: flex;
 
-  list-style: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -241,8 +232,6 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .post {
-  list-style: none;
-
   font-style: normal;
 }
 .post__item:not(:last-child) {
@@ -356,8 +345,7 @@ img {
   background-position: 50% 50%;
   background-size: cover;
 }
-.hero-title {
-  margin-bottom: var(--page-gap);
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -367,22 +355,24 @@ img {
 
   color: var(--page-color-first);
 }
+.hero__title--in-bottom {
+  margin-bottom: var(--page-gap);
+}
+
 /* ===== END Hero ===== */
 /*===== Section benefits =====*/
-.benefits-list {
+.benefits__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
-
-  list-style: none;
 }
-.benefits-item {
+.benefits__item {
   flex-basis: calc(100% / 4 - var(--page-gap));
   margin-top: var(--page-gap);
   margin-left: var(--page-gap);
 }
-.benefits-item-icon {
+.benefits__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -393,7 +383,7 @@ img {
   background-color: rgb(245, 244, 250);
   border-radius: 4px;
 }
-.benefits-item .title {
+.benefits__title {
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -403,24 +393,22 @@ img {
 }
 /*===== END Section benefits =====*/
 /*==Section Workshop==*/
-.section.workshop {
+.workshop {
   padding-top: 0;
 }
-.workshop-list {
+.workshop__list {
   display: flex;
-
-  list-style: none;
 }
-.workshop .title {
+.title--in-bottom {
   margin-bottom: 50px;
 }
-.workshop-list .workshop-item:not(:first-child) {
+.workshop__item:not(:first-child) {
   margin-left: var(--page-gap);
 }
-.workshop-item {
+.workshop__item {
   position: relative;
 }
-.workshop-item-disc {
+.workshop__desc {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -444,18 +432,14 @@ img {
 .team {
   background-color: rgb(245, 244, 250);
 }
-.title.our-team {
-  margin-bottom: 50px;
-}
-.team-list {
+
+.team__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
-
-  list-style: none;
 }
-.team-item {
+.team__item {
   flex-basis: calc(100% / 4 - var(--page-gap));
   margin-top: var(--page-gap);
   margin-left: var(--page-gap);
