@@ -598,19 +598,19 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-bt" type="button" data-modal-close>
-          <svg class="close-bt-icon" width="11" height="11">
+        <button class="modal__close-bt" type="button" data-modal-close>
+          <svg class="modal__bt-icon" width="11" height="11">
             <use href="./image/icons.svg#icon-Vector"></use>
           </svg>
         </button>
 
         <form class="modal-form" action="#" method="post">
-          <p class="title">Оставьте свои данные, мы вам перезвоним</p>
-          <div class="modal-form-box">
-            <label class="modal-form-name" for="user_name">Имя</label>
-            <span class="modal-cells-box">
+          <p class="modal-form__title title text-style">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="modal-form__box">
+            <label class="modal-form__name" for="user_name">Имя</label>
+            <span class="modal-form__wrap">
               <input
-                class="modal-cell"
+                class="modal-form__cell"
                 id="user_name"
                 name="clients-name"
                 type="text"
@@ -619,16 +619,16 @@
                 pattern="[a-zA-Zа-яёА-ЯЁ]+"
                 title="Имя должно содержать символы кирилицы или латиницы"
               />
-              <svg class="modal-form-icon">
+              <svg class="modal-form__icon">
                 <use href="./image/icons.svg#person"></use>
               </svg>
             </span>
           </div>
-          <div class="modal-form-box">
-            <label class="modal-form-name" for="user_tel"> Телефон</label>
-            <span class="modal-cells-box">
+          <div class="modal-form__box">
+            <label class="modal-form__name" for="user_tel"> Телефон</label>
+            <span class="modal-form__wrap">
               <input
-                class="modal-cell"
+                class="modal-form__cell"
                 id="user_tel"
                 name="clients-tel"
                 type="tel"
@@ -637,61 +637,61 @@
                 title="097*******"
                 required
               />
-              <svg class="modal-form-icon">
+              <svg class="modal-form__icon">
                 <use href="./image/icons.svg#phone"></use>
               </svg>
             </span>
           </div>
-          <div class="modal-form-box">
-            <label class="modal-form-name" for="user_email">Почта</label>
-            <span class="modal-cells-box">
+          <div class="modal-form__box">
+            <label class="modal-form__name" for="user_email">Почта</label>
+            <span class="modal-form__wrap">
               <input
-                class="modal-cell"
+                class="modal-form__cell"
                 id="user_email"
                 type="email"
                 name="clients-email"
                 required
               />
-              <svg class="modal-form-icon">
+              <svg class="modal-form__icon">
                 <use href="./image/icons.svg#email"></use>
               </svg>
             </span>
           </div>
-          <div class="modal-form-box">
-            <label class="modal-form-name" for="user_comment">Комментарий</label>
+          <div class="modal-form__box">
+            <label class="modal-form__name" for="user_comment">Комментарий</label>
             <textarea
-              class="modal-area"
+              class="modal-form__area"
               name="clients-comment"
               id="user_comment"
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="modal-form-box">
-            <label class="modal-form-checkbox" for="user_contract">
-              <span class="checkbox-clicks">
+          <div class="modal-form__box">
+            <label class="checkbox" for="user_contract">
+              <span class="checkbox__wrap">
                 <input
-                  class="modal-checkbox"
+                  class="checkbox__cell"
                   id="user_contract"
                   type="checkbox"
                   name="clients-contract"
                   value="agree"
                 />
 
-                <svg class="click-on">
+                <svg class="checkbox__icon-on">
                   <use href="./image/icons.svg#click-on"></use>
                 </svg>
-                <svg class="click-off">
+                <svg class="checkbox__icon-off">
                   <use href="./image/icons.svg#click-off"></use>
                 </svg>
               </span>
 
               Соглашаюсь с рассылкой и принимаю&nbsp;
-              <a class="link-contract" href="#" target="_blank" rel="noopener noreferrer"
+              <a class="checkbox__contract" href="#" target="_blank" rel="noopener noreferrer"
                 >Условия договора</a
               >
             </label>
           </div>
-          <button class="page-button" type="submit">Отправить</button>
+          <button class="modal-form__button page-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
