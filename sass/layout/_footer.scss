@@ -1,0 +1,30 @@
+.page-footer {
+  display: flex;
+  align-items: baseline;
+}
+.address-box {
+  display: flex;
+  flex-direction: column;
+}
+.subscr-box--in-left {
+  margin-left: auto;
+}
+.subscr-box__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: var(--page-color-first);
+}
+.links-box--in-left {
+  margin-left: 70px;
+}
+.links-box__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: var(--page-color-first);
+}

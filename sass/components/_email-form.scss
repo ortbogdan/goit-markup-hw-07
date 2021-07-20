@@ -1,0 +1,51 @@
+.email-form {
+  display: flex;
+}
+.email-form__cell {
+  width: 358px;
+  height: 50px;
+
+  border-radius: 4px;
+
+  padding: 15px 16px 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  cursor: pointer;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.email-form__cell::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.email-form__cell:hover::placeholder,
+.email-form__cell:focus::placeholder {
+  color: var(--page-color-second);
+}
+.email-form__cell:hover,
+.email-form__cell:focus {
+  border-color: var(--page-color-second);
+  color: var(--page-color-first);
+  outline: none;
+}
+.email-form__icon {
+  width: 24px;
+  height: 24px;
+}
+.email-form__icon--end {
+  margin-left: 10px;
+}
+.email-form__button {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+}
