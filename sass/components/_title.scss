@@ -5,7 +5,8 @@
   text-align: center;
 
   color: rgb(33, 33, 33);
-}
-.title--in-bottom {
-  margin-bottom: 50px;
+
+  &--in-bottom {
+    margin-bottom: 50px;
+  }
 }

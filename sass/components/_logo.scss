@@ -10,14 +10,15 @@
   letter-spacing: 0.03em;
 
   color: var(--page-color-second);
-}
-.logo__text {
-  color: rgb(0, 0, 0);
-}
-.logo--in-bottom {
-  margin-bottom: 20px;
-  padding: 0 0;
-}
-.logo__text--white {
-  color: var(--page-color-first);
+
+  &__text {
+    color: rgb(0, 0, 0);
+  }
+  &--in-bottom {
+    margin-bottom: 20px;
+    padding: 0 0;
+  }
+  &__text--white {
+    color: var(--page-color-first);
+  }
 }
