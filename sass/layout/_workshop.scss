@@ -1,9 +1,12 @@
 .workshop {
   padding-top: 0;
-}
-.workshop-list {
-  display: flex;
 
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+  }
   &__item {
     position: relative;
 

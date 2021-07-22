@@ -1,13 +1,15 @@
 .team {
   background-color: rgb(245, 244, 250);
-}
 
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
-
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
   &__item {
     flex-basis: calc(100% / 4 - var(--page-gap));
     margin-top: var(--page-gap);

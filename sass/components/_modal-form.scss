@@ -5,10 +5,9 @@
   &__title {
     font-size: 20px;
     line-height: 1.15;
-    &--in-top {
-      margin-bottom: 12px;
-    }
+    margin-bottom: 12px;
   }
+
   &__box:not(:last-child) {
     margin-bottom: 10px;
   }
